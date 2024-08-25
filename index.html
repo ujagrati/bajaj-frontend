@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Roll Number</title>
+    <!-- Change this to your roll number -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>BFHL API Frontend</h1>
+
+      <!-- JSON Input -->
+      <div class="input-group">
+        <label for="json-input">API Input</label>
+        <textarea
+          id="json-input"
+          placeholder='{"data":["M","1","334","4","B"]}'
+        ></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button id="submit-btn"><i class="fas fa-paper-plane"></i> Submit</button>
+
+      <!-- Multi-Select Dropdown -->
+      <div id="dropdown-container">
+        <label for="multi-filter">Multi Filter</label>
+        <select id="multi-filter" multiple>
+          <option value="alphabets">Alphabets</option>
+          <option value="numbers">Numbers</option>
+          <option value="highest-lowercase">Highest Lowercase Alphabet</option>
+        </select>
+      </div>
+
+      <!-- Filtered Response -->
+      <div id="result-container">
+        <h2>Filtered Response</h2>
+        <p id="filtered-response"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
